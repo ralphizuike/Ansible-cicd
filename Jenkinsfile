@@ -37,7 +37,7 @@ pipeline {
         stage('Ansible Deploy') {
              
             steps {
-               sh "ansible-playbook main.yml -i inventories/dev/hosts --user jenkins --key-file /var/lib/jenkins/.ssh/id_rsa --limit @/var/lib/jenkins/workspace/ansible_etechwebRegistration/main.retry"     
+               sh "ansible-playbook etech.yaml -i inventories/dev/hosts --user jenkins "     
             }
         }
     }
