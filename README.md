@@ -1,2 +1,2 @@
 # ansible_ci-cd
-continuose integration and continous deployment with ansible
+continous integration and continous deployment with ansible
