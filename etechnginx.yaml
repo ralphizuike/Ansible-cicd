@@ -1,5 +1,5 @@
 - name: Configure webserver with nginx
-  hosts: webservers
+  hosts: all
   become: True
   tasks:
     - name: install nginx
