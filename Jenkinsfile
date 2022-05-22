@@ -37,6 +37,7 @@ pipeline {
         stage('Ansible Deploy') {
              
             steps {
+                sh " su ansible "
                sh "ansible-playbook main.yml -i inventories/dev/hosts --user ansible"     
             }
         }
