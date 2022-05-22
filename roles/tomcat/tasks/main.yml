@@ -44,8 +44,7 @@
   copy: src=tomcat-initscript.sh dest=/etc/systemd/system/tomcat mode=0755
 
 - name: Start Tomcat
-  shell: ./tomcat-initscript.sh
-   arg: start
+  service: name=tomcat state=started enabled=yes
 
 - name: wait for tomcat to start
   wait_for: port={{http_port}}
