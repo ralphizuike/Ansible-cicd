@@ -37,7 +37,7 @@ pipeline {
         stage('Ansible Deploy') {
              
             steps {
-               sh "ansible-playbook nginx.yaml -i inventories/dev/hosts --user jenkins "     
+               sh "ansible-playbook etechnginx.yaml -i inventories/dev/hosts --user jenkins "     
             }
         }
     }
